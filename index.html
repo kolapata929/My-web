@@ -28,6 +28,22 @@
         </div>
     </header>
 
+    <!-- Logo Pop-up Trigger -->
+    <div class="logo-popup-trigger" onclick="openLogoPopup()">
+        <img src="https://cdn.glitch.global/14329517-ae42-47b1-bac5-a97c99ab32b7/IMG_20250219_004322_863.jpg?v=1739906039438" alt="Logo" class="logo">
+    </div>
+
+    <!-- Logo Pop-up Modal -->
+    <div id="logoPopup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogoPopup()">&times;</span>
+            <img src="logo.png" alt="Logo" class="modal-logo">
+            <h2>About My Logo</h2>
+            <p>This logo represents my passion for creativity and innovation in web development. It combines modern design elements with a touch of minimalism, reflecting my approach to building clean and user-friendly websites.</p>
+            <p><strong>Design Philosophy:</strong> Simplicity, elegance, and functionality.</p>
+        </div>
+    </div>
+
     <!-- About Section -->
     <section id="about">
         <div class="container">
@@ -90,11 +106,29 @@
         </div>
     </footer>
 
-    <!-- Script for Animations -->
+    <!-- Script for Animations and Modal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
+        // ScrollReveal Animations
         ScrollReveal().reveal('header h1, header p, .btn-scroll', { delay: 300, origin: 'top', distance: '50px' });
         ScrollReveal().reveal('#about, #skills, #projects, #contact', { delay: 400, origin: 'bottom', distance: '50px' });
+
+        // Logo Pop-up Modal
+        function openLogoPopup() {
+            document.getElementById('logoPopup').style.display = 'block';
+        }
+
+        function closeLogoPopup() {
+            document.getElementById('logoPopup').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('logoPopup');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
     </script>
 </body>
-</html>
+    </html>
