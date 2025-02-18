@@ -19,15 +19,6 @@
     <!-- Overlay -->
     <div class="overlay"></div>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>John Doe</h1>
-            <p>Web Developer & Designer</p>
-            <a href="#about" class="btn-scroll">Explore My Work <i class="fas fa-arrow-down"></i></a>
-        </div>
-    </header>
-
     <!-- Logo Pop-up Trigger -->
     <div class="logo-popup-trigger" onclick="openLogoPopup()">
         <img src="https://cdn.glitch.global/14329517-ae42-47b1-bac5-a97c99ab32b7/IMG_20250219_004322_863.jpg?v=1739906039438" alt="Logo" class="logo">
@@ -37,12 +28,21 @@
     <div id="logoPopup" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeLogoPopup()">&times;</span>
-            <img src="logo.png" alt="Logo" class="modal-logo">
+            <img src="https://cdn.glitch.global/14329517-ae42-47b1-bac5-a97c99ab32b7/IMG_20250219_004322_863.jpg?v=1739906039438" alt="Logo" class="modal-logo">
             <h2>About My Logo</h2>
             <p>This logo represents my passion for creativity and innovation in web development. It combines modern design elements with a touch of minimalism, reflecting my approach to building clean and user-friendly websites.</p>
             <p><strong>Design Philosophy:</strong> Simplicity, elegance, and functionality.</p>
         </div>
     </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>John Doe</h1>
+            <p>Web Developer & Designer</p>
+            <a href="#about" class="btn-scroll">Explore My Work <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
 
     <!-- About Section -->
     <section id="about">
@@ -72,63 +72,4 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project 1: Personal Blog</h3>
-                <p>A fully responsive personal blog built with HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2: E-commerce Website</h3>
-                <p>An e-commerce platform developed using React.js and Bootstrap.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3: Portfolio Website</h3>
-                <p>A modern portfolio website showcasing my work and skills.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to send me an email at <a href="mailto:john.doe@example.com">john.doe@example.com</a>.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 John Doe. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Script for Animations and Modal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        // ScrollReveal Animations
-        ScrollReveal().reveal('header h1, header p, .btn-scroll', { delay: 300, origin: 'top', distance: '50px' });
-        ScrollReveal().reveal('#about, #skills, #projects, #contact', { delay: 400, origin: 'bottom', distance: '50px' });
-
-        // Logo Pop-up Modal
-        function openLogoPopup() {
-            document.getElementById('logoPopup').style.display = 'block';
-        }
-
-        function closeLogoPopup() {
-            document.getElementById('logoPopup').style.display = 'none';
-        }
-
-        // Close modal when clicking outside of it
-        window.onclick = function(event) {
-            const modal = document.getElementById('logoPopup');
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        };
-    </script>
-</body>
-    </html>
+                <h3>Project 1: Personal Blog</h
